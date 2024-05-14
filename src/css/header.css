@@ -1,0 +1,9 @@
+.app-bar {
+    background-color: darkslategrey;
+    width: 100vw;
+}
+
+.app-bar > .title {
+    text-align: center;
+    color: white;
+}
