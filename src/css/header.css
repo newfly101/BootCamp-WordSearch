@@ -1,9 +1,51 @@
-.app-bar {
+a {
+    text-decoration: none;
+    color: white;
+}
+.nav-bar {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: darkslategrey;
-    width: 100vw;
+    padding: 8px 12px;
+}
+
+.app-bar {
 }
 
 .app-bar > .title {
     text-align: center;
+    font-size: 24px;
     color: white;
+}
+
+.app-bar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.app-bar__menu li {
+    padding: 8px 12px;
+}
+.app-bar__menu li:hover {
+    background-color: rgb(19, 61, 56);
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 613px) {
+    .nav-bar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .app-bar__menu {
+        flex-direction: column;
+        align-items:center;
+        width: 100%;
+    }
+    .app-bar__menu li {
+        width: 100%;
+        text-align : center;
+    }
 }
