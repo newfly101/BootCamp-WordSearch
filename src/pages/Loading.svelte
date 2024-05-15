@@ -36,7 +36,7 @@
         border-radius: 50%;
         --color: #ff8df9;
         border-bottom: 8px solid var(--color);
-        animation: rotate1 2s linear infinite;
+        animation: rotate1 1s linear infinite;
     }
 
     @keyframes rotate1 {
